@@ -13,6 +13,10 @@ namespace SamuraiAppCore.Data
         {
             modelBuilder.Entity<SamuraiBattle>()
                 .HasKey(s => new { s.BattleId, s.SamuraiId });
+
+            //modelBuilder.Entity<Samurai>()
+            //    .Property(s => s.SecretIdentity).IsRequired();                
+
             base.OnModelCreating(modelBuilder);
         }
 
